@@ -43,16 +43,64 @@ body {
     padding: 10px;
 }
 
+.info-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .chart-container {
     margin: 10px 0;
-    height: 400px;
+    height: 450px;
     width: 350px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     background-color: hsl(33, 100%, 98%);
 }
+
+.chart-title, .total-amount-text, .total-percent {
+    color: hsl(25, 47%, 15%)
+}
+
+.total-percent {
+    text-align: right;
+}
+
+.total-amount-text {
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    height: 3px;
+    width: 330px;
+    border: none;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.total-container, .total-percent-container {
+    padding: 20px 10px;
+}
+
 
 .chart-title {
     font-size: 24px;
     font-weight: 700;
     padding: 20px;
+}
+
+.total-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-text, .total-percent-text {
+    color: hsl(28, 10%, 53%);
 }
