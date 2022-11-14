@@ -25,7 +25,6 @@ body {
     height: 120px;
     width: 500px;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .balance-text {
@@ -38,7 +37,7 @@ body {
 }
 
 .info-image-container, .info-container {
-    padding: 10px;
+    padding: 20px;
 }
 
 .info-image-container {
@@ -49,18 +48,18 @@ body {
 
 .chart-container {
     margin: 10px 0;
-    height: 500px;
+    height: 530px;
     width: 500px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     background-color: hsl(33, 100%, 98%);
-    padding: 10px;
+    padding: 20px;
 }
 
 #chart-container {
-    height: 350px;
-    width: 480px;
+    height: 400px;
+    width: 460px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -164,6 +163,11 @@ body {
 
 .total-text, .total-percent-text, .bar-text-container {
     color: hsl(28, 10%, 53%);
+}
+
+.total-amount-text {
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .bar-text-container {
