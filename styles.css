@@ -15,9 +15,6 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-.expenses-chart-container {
-}
-
 .info-container {
     background-color: hsl(10, 79%, 65%);
     color: hsl(27, 66%, 92%);
@@ -25,8 +22,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
-    width: 400px;
+    height: 120px;
+    width: 500px;
     border-radius: 10px;
     padding: 20px;
 }
@@ -37,7 +34,7 @@ body {
 
 .bold {
     font-weight: 700;
-    font-size: 32px !important;
+    font-size: 36px !important;
 }
 
 .info-image-container, .info-container {
@@ -53,7 +50,7 @@ body {
 .chart-container {
     margin: 10px 0;
     height: 500px;
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -63,7 +60,7 @@ body {
 
 #chart-container {
     height: 350px;
-    width: 380px;
+    width: 480px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -79,7 +76,7 @@ body {
 }
 
 .bar {
-    width: 40px;
+    width: 50px;
     margin: 0 auto;
     background-color: hsl(10, 79%, 65%);
 }
@@ -100,7 +97,6 @@ body {
     position: relative;
     width: 50px;
     top: -35px;
-    left: -5px;
     font-size: 12px;
     background-color: hsl(25, 47%, 15%);
     color: hsl(27, 66%, 92%);
@@ -127,6 +123,7 @@ body {
 }
 
 .total-percent {
+    margin-top: 15px;
     text-align: right;
 }
 
@@ -144,7 +141,7 @@ body {
 
 .divider {
     height: 3px;
-    width: 330px;
+    width: 470px;
     border: none;
     background-color: hsl(27, 66%, 92%);
 }
@@ -160,7 +157,7 @@ body {
 }
 
 .total-info-container {
-    padding: 10px;
+    padding: 10px 5px 5px 5px;
     display: flex;
     justify-content: space-between;
 }
