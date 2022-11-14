@@ -1,3 +1,7 @@
-import data from './data.json'
+const getData = async () => {
+    const data = await fetch('./data.json');
+    const dataJson = await data.json();
+    await console.log(dataJson);
+}
 
-console.log(data);
+getData();
