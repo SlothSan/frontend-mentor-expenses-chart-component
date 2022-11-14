@@ -19,9 +19,10 @@ const createChart = async () => {
         if (day.day === todayDay) {
             active = "active-bar"
         }
-        element.innerHTML += `<div class="bar-container" >
-                                <p id={"${day.day}-text"} class="bar-amount-text hidden">$${day.amount}</p>
-                                <div class="bar ${active}" style="height: ${height}px"></div>
+        element.innerHTML += `<div class="bar-container" > 
+                                <div class="bar ${active}" style="height: ${height}px">
+                                <p id="${day.day}-text" class="bar-amount-text hidden">$${day.amount}</p>
+                                </div>
                                 <div class="bar-text-container">
                                     <p class="bar-text">${day.day}</p>
                                 </div>
