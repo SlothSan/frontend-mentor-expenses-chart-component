@@ -25,18 +25,19 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    width: 350px;
+    height: 150px;
+    width: 400px;
     border-radius: 10px;
     padding: 20px;
 }
 
 .balance-text {
-    padding: 5px;
+    font-size: 18px;
 }
 
-.balance-text:last-of-type {
+.bold {
     font-weight: 700;
+    font-size: 32px !important;
 }
 
 .info-image-container, .info-container {
@@ -51,18 +52,18 @@ body {
 
 .chart-container {
     margin: 10px 0;
-    height: 450px;
-    width: 350px;
+    height: 500px;
+    width: 400px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     background-color: hsl(33, 100%, 98%);
-    padding: 20px;
+    padding: 10px;
 }
 
 #chart-container {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 380px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -78,7 +79,7 @@ body {
 }
 
 .bar {
-    width: 30px;
+    width: 40px;
     margin: 0 auto;
     background-color: hsl(10, 79%, 65%);
 }
@@ -99,7 +100,7 @@ body {
     position: relative;
     width: 50px;
     top: -35px;
-    left: -10px;
+    left: -5px;
     font-size: 12px;
     background-color: hsl(25, 47%, 15%);
     color: hsl(27, 66%, 92%);
@@ -111,10 +112,12 @@ body {
 }
 
 .bar .bar-amount-text {
+    visibility: hidden;
     opacity: 0;
 }
 
 .bar:hover .bar-amount-text {
+    visibility: visible;
     opacity: 1;
     transition: all 0.5s;
 }
@@ -157,6 +160,7 @@ body {
 }
 
 .total-info-container {
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }

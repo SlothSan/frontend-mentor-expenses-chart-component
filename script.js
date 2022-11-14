@@ -15,7 +15,7 @@ const createChart = async () => {
     const chartData = await getData()
     await Object.values(chartData).forEach(day => {
         let active = "";
-        const height = Math.floor(parseInt(day.amount) * 3);
+        const height = Math.floor(parseInt(day.amount) * 4);
         if (day.day === todayDay) {
             active = "active-bar"
         }
