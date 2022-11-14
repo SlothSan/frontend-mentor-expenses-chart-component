@@ -179,3 +179,38 @@ body {
 .bar-text {
     font-size: 14px;
 }
+
+@media only screen and (max-width: 400px) {
+    .info-container, .chart-container {
+        width: 350px;
+    }
+
+    .info-image-container, .info-container {
+        padding: 10px;
+    }
+
+    #chart-container {
+        width: 320px;
+    }
+
+    .bold {
+        font-size: 26px !important;
+    }
+
+    .total-amount-text {
+        font-size: 34px;
+    }
+
+    .total-percent {
+        margin-top: 15px;
+    }
+
+    .bar-amount-text {
+        width: 50px;
+        font-size: 12px;
+    }
+
+    .bar {
+        width: 30px;
+    }
+}
