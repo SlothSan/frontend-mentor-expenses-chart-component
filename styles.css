@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .expenses-chart-container {
@@ -27,8 +28,17 @@ body {
     align-items: center;
     height: 100px;
     width: 350px;
+    border-radius: 10px;
+}
+
+.balance-text {
+    padding: 5px;
+}
+
+.balance-text:last-of-type {
+    font-weight: 700;
 }
 
 .info-image-container, .info-container {
-    padding: 20px;
+    padding: 10px;
 }
