@@ -1,7 +1,9 @@
 const getData = async () => {
     const data = await fetch('./data.json');
-    const dataJson = await data.json();
-    await console.log(dataJson);
+    return await data.json();
 }
 
-getData();
+
+const createChart = async () => {
+    const barCharData = await getData()
+}
