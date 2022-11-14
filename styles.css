@@ -16,7 +16,6 @@ body {
 }
 
 .expenses-chart-container {
-
 }
 
 .info-container {
@@ -29,6 +28,7 @@ body {
     height: 100px;
     width: 350px;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .balance-text {
@@ -57,6 +57,31 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(33, 100%, 98%);
+    padding: 20px;
+}
+
+#chart-container {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bar-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bar {
+    width: 35px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.active-bar {
+    background-color: hsl(186, 34%, 60%);
 }
 
 .chart-title, .total-amount-text, .total-percent {
@@ -73,6 +98,7 @@ body {
 }
 
 .divider-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +119,7 @@ body {
 .chart-title {
     font-size: 24px;
     font-weight: 700;
-    padding: 20px;
+    padding: 10px;
 }
 
 .total-info-container {
@@ -101,6 +127,10 @@ body {
     justify-content: space-between;
 }
 
-.total-text, .total-percent-text {
+.total-text, .total-percent-text, .bar-text-container {
     color: hsl(28, 10%, 53%);
+}
+
+.bar-text-container {
+    margin: 10px 0;
 }
