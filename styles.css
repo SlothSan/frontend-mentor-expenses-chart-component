@@ -7,8 +7,28 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: hsl(33, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
 
 .expenses-chart-container {
 
+}
+
+.info-container {
+    background-color: hsl(10, 79%, 65%);
+    color: hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+}
+
+.info-image-container, .info-container {
+    padding: 20px;
 }
