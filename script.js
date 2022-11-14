@@ -3,11 +3,14 @@ const getData = async () => {
     return await data.json()
 }
 
-
-const createChart = async () => {
+const getDay = () => {
     const weekday = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
     const date = new Date
-    const todayDay = weekday[date.getDay()]
+    return weekday[date.getDay()]
+}
+
+const createChart = async () => {
+    const todayDay = getDay();
     const element = document.getElementById("chart-container")
     const chartData = await getData()
     await Object.values(chartData).forEach(day => {
@@ -16,7 +19,8 @@ const createChart = async () => {
         if (day.day === todayDay) {
             active = "active-bar"
         }
-        element.innerHTML += `<div class="bar-container">
+        element.innerHTML += `<div class="bar-container" >
+                                <p id={"${day.day}-text"} class="bar-amount-text hidden">$${day.amount}</p>
                                 <div class="bar ${active}" style="height: ${height}px"></div>
                                 <div class="bar-text-container">
                                     <p class="bar-text">${day.day}</p>

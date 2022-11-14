@@ -72,17 +72,36 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
 }
 
 .bar {
-    width: 35px;
+    width: 40px;
     background-color: hsl(10, 79%, 65%);
+}
+
+.bar:hover {
+    background-color: hsl(10, 79%, 80%);
 }
 
 .active-bar {
     background-color: hsl(186, 34%, 60%);
 }
+
+.active-bar:hover {
+    background-color: hsl(186, 34%, 75%);
+}
+
+.bar-amount-text {
+    font-size: 12px;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(27, 66%, 92%);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 
 .chart-title, .total-amount-text, .total-percent {
     color: hsl(25, 47%, 15%)
